@@ -1,0 +1,19 @@
+.modal-container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    input{
+        margin-top: 15px;
+    }
+    .debouncing{
+        margin-top: 20px;
+    }
+    .alert{
+        position: absolute;
+        top: 10px;
+        height: 50px;
+    }
+}   
