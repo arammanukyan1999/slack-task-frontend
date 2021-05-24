@@ -20,8 +20,8 @@ export default function SignIn() {
             password
         }
         const data = await UseHttpRequest({ url: '/signin', method: 'POST', data: user })
-        if (!data.success) {
-            setMessage(data.message)
+        if (!data?.success) {
+            setMessage(data?.message)
         } else {
             history.push('/')
             localStorage.setItem('token', data.token)
@@ -50,8 +50,9 @@ export default function SignIn() {
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                    Submit
+                    Sign In
             </Button>
+            <a onClick={()=> history.push("/signup")} >Sign Up</a>
             </Form>
         </div>
     )

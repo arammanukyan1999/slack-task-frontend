@@ -77,7 +77,7 @@ export default function CreateModal({ closeModal, addNewWorkspace }) {
                 })}
                 <Modal.Footer style={{ marginTop: '50px' }}>
                     <Button variant="secondary" onClick={closeModal}>Cancel</Button>
-                    <Button variant="primary" onClick={handleSave}>Save changes</Button>
+                    <Button variant="primary" onClick={handleSave}>Create</Button>
                 </Modal.Footer>
             </Modal.Dialog>
         </div>

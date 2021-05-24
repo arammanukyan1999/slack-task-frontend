@@ -26,6 +26,7 @@ function App() {
         <Route path="/signup">
           <SignUp />
         </Route>
+        <Redirect to='/signin'/>
       </Switch>
     </Router>
   );
